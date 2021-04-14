@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=8.0.23.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -67,12 +68,54 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AppVista\CSS\inicio_style.css" />
+    <Content Include="AppVista\CSS\normalize.css" />
+    <Content Include="AppVista\frmInicio.aspx" />
+    <Content Include="AppVista\frmLogin.aspx" />
+    <Content Include="AppVista\JS\inicio_js.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppControlador\ClienteDAO.cs" />
+    <Compile Include="AppControlador\DetalleRutinaDAO.cs" />
+    <Compile Include="AppControlador\EjercicioDAO.cs" />
+    <Compile Include="AppControlador\EntrenadorDAO.cs" />
+    <Compile Include="AppControlador\InscripcionDAO.cs" />
+    <Compile Include="AppControlador\ProductoDAO.cs" />
+    <Compile Include="AppControlador\RutinaDAO.cs" />
+    <Compile Include="AppControlador\__Conexion.cs" />
+    <Compile Include="AppModelo\Cliente.cs" />
+    <Compile Include="AppModelo\DetalleRutina.cs" />
+    <Compile Include="AppModelo\Ejercicio.cs" />
+    <Compile Include="AppModelo\Entrenador.cs" />
+    <Compile Include="AppModelo\Inscripcion.cs" />
+    <Compile Include="AppModelo\Producto.cs" />
+    <Compile Include="AppModelo\Rutina.cs" />
+    <Compile Include="AppVista\frmInicio.aspx.cs">
+      <DependentUpon>frmInicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppVista\frmInicio.aspx.designer.cs">
+      <DependentUpon>frmInicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppVista\frmLogin.aspx.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppVista\frmLogin.aspx.designer.cs">
+      <DependentUpon>frmLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppVista\MasterPages\Base.Master.cs">
+      <DependentUpon>Base.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppVista\MasterPages\Base.Master.designer.cs">
+      <DependentUpon>Base.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AppVista\MasterPages\Base.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -81,6 +124,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
