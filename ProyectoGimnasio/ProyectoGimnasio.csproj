@@ -68,11 +68,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AppVista\CSS\base_style.css" />
     <Content Include="AppVista\CSS\inicio_style.css" />
+    <Content Include="AppVista\CSS\login_style.css" />
     <Content Include="AppVista\CSS\normalize.css" />
+    <Content Include="AppVista\frmAyuda.aspx" />
     <Content Include="AppVista\frmInicio.aspx" />
     <Content Include="AppVista\frmLogin.aspx" />
+    <Content Include="AppVista\frmProductos.aspx" />
+    <Content Include="AppVista\IMG\img-barra-pesas.jpg" />
+    <Content Include="AppVista\IMG\LogoGYM.png" />
+    <Content Include="AppVista\JS\ayuda.js" />
     <Content Include="AppVista\JS\inicio_js.js" />
+    <Content Include="AppVista\JS\login.js" />
+    <Content Include="AppVista\JS\productos.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +100,13 @@
     <Compile Include="AppModelo\Inscripcion.cs" />
     <Compile Include="AppModelo\Producto.cs" />
     <Compile Include="AppModelo\Rutina.cs" />
+    <Compile Include="AppVista\frmAyuda.aspx.cs">
+      <DependentUpon>frmAyuda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppVista\frmAyuda.aspx.designer.cs">
+      <DependentUpon>frmAyuda.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AppVista\frmInicio.aspx.cs">
       <DependentUpon>frmInicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -104,6 +120,13 @@
     </Compile>
     <Compile Include="AppVista\frmLogin.aspx.designer.cs">
       <DependentUpon>frmLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppVista\frmProductos.aspx.cs">
+      <DependentUpon>frmProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppVista\frmProductos.aspx.designer.cs">
+      <DependentUpon>frmProductos.aspx</DependentUpon>
     </Compile>
     <Compile Include="AppVista\MasterPages\Base.Master.cs">
       <DependentUpon>Base.Master</DependentUpon>

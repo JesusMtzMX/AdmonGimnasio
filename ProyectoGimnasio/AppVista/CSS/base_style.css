@@ -1,0 +1,63 @@
+﻿body {
+    background: radial-gradient(#FFFF, #28AA);    
+}
+
+
+.barra-navegacion {
+    background: #454555;
+}
+
+.barra-navegacion__logo {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-right: 500px;/**/
+}
+
+.barra-navegacion__logo-img {
+    width: 100%;
+}
+
+
+
+.barra-navegacion__elementos {  
+}
+
+.barra-navegacion__li, .barra-navegacion__li-usuario {
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 25px;
+}
+
+.barra-navegacion__ul {
+    display: inline-block;
+}
+
+.barra-navegacion__li a {
+    text-decoration: none;
+    color: #F1F2F3;
+}
+
+.barra-navegacion__li i {
+    color: #DDD;
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.barra-navegacion__li:hover > i{
+    color: #FFF;    
+}
+
+.barra-navegacion__li:hover > a {
+    color: #9ADAFC;
+    border-top: 2px solid #9ADAFC;
+    transition: 0.15s;
+}
+
+.active-section
+{
+    color: #FFF !important;
+    border-top: 3px solid #5AA4AB;
+}
+/**Agregar clases active con JS, generar CSS para masterpages*/

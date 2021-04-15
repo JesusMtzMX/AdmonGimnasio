@@ -10,6 +10,6 @@
 namespace ProyectoGimnasio.AppVista {
     
     
-    public partial class frmLogin {
+    public partial class frmProductos {
     }
 }

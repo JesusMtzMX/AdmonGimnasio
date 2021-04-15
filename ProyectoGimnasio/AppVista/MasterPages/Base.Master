@@ -10,17 +10,18 @@
 
     <link href="../CSS/normalize.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    
+    <link href="../CSS/base_style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a67dc84222.js" crossorigin="anonymous"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <header class="header">
-        <nav class="barra-navegacion">
-            <div class="barra-navegacion__logo">
-                <h6>Imagen xd</h6>
-            </div>
+    <header class="header"> <!-- En el header se carga la navbar para los diferentes tipos de usuarios -->
+        <nav class="barra-navegacion">            
             <div class="barra-navegacion__elementos">
+                <div class="barra-navegacion__logo">
+                    <img class="barra-navegacion__logo-img" src="IMG/LogoGYM.png" alt="Logo"/>
+                </div>
                 <%
                     if(Session["TipoUsuario"] == null || Session["TipoUsuario"].ToString() == "")
                     {
@@ -30,10 +31,10 @@
                 
                 <ul class="barra-navegacion__ul">
                     <li class="barra-navegacion__li-usuario">Invitado</li>
-                    <li class="barra-navegacion__li"><a id="inicio" href="frmInicio.aspx">Inicio</a></li>
-                    <li class="barra-navegacion__li"><a id="iniciar-sesion" href="frmLogin.aspx">Iniciar sesión</a></li>
-                    <li class="barra-navegacion__li"><a href="#">Clientes</a></li>
-                    <li class="barra-navegacion__li"><a href="#">Productos</a></li>
+                    <li class="barra-navegacion__li"><i class="fas fa-home"></i><a id="inicio" href="frmInicio.aspx">Inicio</a></li>
+                    <li class="barra-navegacion__li"><i class="fas fa-user"></i><a id="iniciar-sesion" href="frmLogin.aspx">Iniciar sesión</a></li>                    
+                    <li class="barra-navegacion__li"><i class="fas fa-dollar-sign"></i><a id="productos" href="frmProductos.aspx">Productos</a></li>
+                    <li class="barra-navegacion__li"><i class="fas fa-question-circle"></i><a id="ayuda" href="frmAyuda.aspx">Ayuda</a></li>
                 </ul>
 
                 <%  
@@ -56,8 +57,8 @@
             </div>
         </nav>
     </header>
-    <main>
-        <form id="form1" runat="server">
+    <main> <!-- En el main se encuentra el contenido principal de la página -->
+        <form class="form" id="form1" runat="server">
             <div>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>
