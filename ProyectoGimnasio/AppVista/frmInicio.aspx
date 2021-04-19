@@ -4,11 +4,11 @@
     <link href="CSS/inicio_style.css" rel="stylesheet" />
 
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
     <div class="jumbotron">
         <h1 class="text-center">Bienvenido</h1>
     </div>
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">
     <script src="JS/inicio_js.js"></script>
 </asp:Content>

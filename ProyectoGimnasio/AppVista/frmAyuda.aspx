@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AppVista/MasterPages/Base.Master" AutoEventWireup="true" CodeBehind="frmAyuda.aspx.cs" Inherits="ProyectoGimnasio.AppVista.frmAyuda" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
     <div class="container mt-3">
         <h3>Acerca de nosotros</h3>
         <p>
@@ -24,6 +24,6 @@
         </p>
     </div>
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">
     <script src="JS/ayuda.js"></script>
 </asp:Content>

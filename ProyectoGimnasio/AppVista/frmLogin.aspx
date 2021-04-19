@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="CSS/login_style.css" rel="stylesheet" />
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
     <div class="container mt-5">
         <h3>A continuación ingrese sus datos para iniciar sesión</h3>
         <div class="form__section">
@@ -16,6 +16,6 @@
             </div>
     </div>
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">
     <script src="JS/login.js"></script>
 </asp:Content>

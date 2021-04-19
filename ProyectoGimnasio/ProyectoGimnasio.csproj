@@ -68,6 +68,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AppVista\Administracion\ejercicios.xml" />
+    <Content Include="AppVista\Administracion\frmAdministracionRutinas.aspx" />
+    <Content Include="AppVista\Administracion\FrmAdministrarProductos.aspx" />
+    <Content Include="AppVista\Administracion\gruposMusculares.xml" />
     <Content Include="AppVista\CSS\base_style.css" />
     <Content Include="AppVista\CSS\inicio_style.css" />
     <Content Include="AppVista\CSS\login_style.css" />
@@ -78,13 +82,16 @@
     <Content Include="AppVista\frmProductos.aspx" />
     <Content Include="AppVista\IMG\img-barra-pesas.jpg" />
     <Content Include="AppVista\IMG\LogoGYM.png" />
+    <Content Include="AppVista\JS\admonRutinas.js" />
     <Content Include="AppVista\JS\ayuda.js" />
     <Content Include="AppVista\JS\inicio_js.js" />
     <Content Include="AppVista\JS\login.js" />
     <Content Include="AppVista\JS\productos.js" />
+    <Content Include="AppVista\JS\tablaEjercicios.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppControlador\AdministradorDAO.cs" />
     <Compile Include="AppControlador\ClienteDAO.cs" />
     <Compile Include="AppControlador\DetalleRutinaDAO.cs" />
     <Compile Include="AppControlador\EjercicioDAO.cs" />
@@ -92,7 +99,9 @@
     <Compile Include="AppControlador\InscripcionDAO.cs" />
     <Compile Include="AppControlador\ProductoDAO.cs" />
     <Compile Include="AppControlador\RutinaDAO.cs" />
+    <Compile Include="AppControlador\UsuarioDAO.cs" />
     <Compile Include="AppControlador\__Conexion.cs" />
+    <Compile Include="AppModelo\Administrador.cs" />
     <Compile Include="AppModelo\Cliente.cs" />
     <Compile Include="AppModelo\DetalleRutina.cs" />
     <Compile Include="AppModelo\Ejercicio.cs" />
@@ -100,6 +109,21 @@
     <Compile Include="AppModelo\Inscripcion.cs" />
     <Compile Include="AppModelo\Producto.cs" />
     <Compile Include="AppModelo\Rutina.cs" />
+    <Compile Include="AppModelo\Usuario.cs" />
+    <Compile Include="AppVista\Administracion\frmAdministracionRutinas.aspx.cs">
+      <DependentUpon>frmAdministracionRutinas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppVista\Administracion\frmAdministracionRutinas.aspx.designer.cs">
+      <DependentUpon>frmAdministracionRutinas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppVista\Administracion\FrmAdministrarProductos.aspx.cs">
+      <DependentUpon>FrmAdministrarProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppVista\Administracion\FrmAdministrarProductos.aspx.designer.cs">
+      <DependentUpon>FrmAdministrarProductos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AppVista\frmAyuda.aspx.cs">
       <DependentUpon>frmAyuda.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
