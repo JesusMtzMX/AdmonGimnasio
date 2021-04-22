@@ -7,14 +7,14 @@ namespace ProyectoGimnasio.AppModelo
 {
     public class Producto
     {
-        private int idProducto { get; set; }
-        private String Nombre { get; set; }
-        private String Marca { get; set; }
-        private String Contenido { get; set; }
-        private String Categoria { get; set; }
-        private String Descripcion { get; set; }
-        private String Foto { get; set; }
-        private String Estatus { get; set; }
+        public int idProducto { get; set; }
+        public String Nombre { get; set; }
+        public String Marca { get; set; }
+        public String Contenido { get; set; }
+        public String Categoria { get; set; }
+        public String Descripcion { get; set; }
+        public String Foto { get; set; }
+        public String Estatus { get; set; }
 
         public Producto(String Nombre, String Marca, String Contenido, String Categoria, String Descripcion, 
             String Foto, String Estatus)
@@ -26,6 +26,11 @@ namespace ProyectoGimnasio.AppModelo
             this.Descripcion = Descripcion;
             this.Foto = Foto;
             this.Estatus = Estatus;
+        }
+
+        public Producto()
+        {
+
         }
 
     }

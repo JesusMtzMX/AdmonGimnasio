@@ -70,7 +70,7 @@
   <ItemGroup>
     <Content Include="AppVista\Administracion\ejercicios.xml" />
     <Content Include="AppVista\Administracion\frmAdministracionRutinas.aspx" />
-    <Content Include="AppVista\Administracion\FrmAdministrarProductos.aspx" />
+    <Content Include="AppVista\Administracion\frmAdministrarProductos.aspx" />
     <Content Include="AppVista\Administracion\gruposMusculares.xml" />
     <Content Include="AppVista\CSS\base_style.css" />
     <Content Include="AppVista\CSS\inicio_style.css" />
@@ -82,6 +82,7 @@
     <Content Include="AppVista\frmProductos.aspx" />
     <Content Include="AppVista\IMG\img-barra-pesas.jpg" />
     <Content Include="AppVista\IMG\LogoGYM.png" />
+    <Content Include="AppVista\JS\administrarProductos.js" />
     <Content Include="AppVista\JS\admonRutinas.js" />
     <Content Include="AppVista\JS\ayuda.js" />
     <Content Include="AppVista\JS\inicio_js.js" />
@@ -117,12 +118,12 @@
     <Compile Include="AppVista\Administracion\frmAdministracionRutinas.aspx.designer.cs">
       <DependentUpon>frmAdministracionRutinas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AppVista\Administracion\FrmAdministrarProductos.aspx.cs">
-      <DependentUpon>FrmAdministrarProductos.aspx</DependentUpon>
+    <Compile Include="AppVista\Administracion\frmAdministrarProductos.aspx.cs">
+      <DependentUpon>frmAdministrarProductos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AppVista\Administracion\FrmAdministrarProductos.aspx.designer.cs">
-      <DependentUpon>FrmAdministrarProductos.aspx</DependentUpon>
+    <Compile Include="AppVista\Administracion\frmAdministrarProductos.aspx.designer.cs">
+      <DependentUpon>frmAdministrarProductos.aspx</DependentUpon>
     </Compile>
     <Compile Include="AppVista\frmAyuda.aspx.cs">
       <DependentUpon>frmAyuda.aspx</DependentUpon>
@@ -171,7 +172,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Servicios\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

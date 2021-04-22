@@ -7,9 +7,20 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace ProyectoGimnasio.AppVista {
-    
-    
-    public partial class frmProductos {
+namespace ProyectoGimnasio.AppVista
+{
+
+
+    public partial class frmProductos
+    {
+
+        /// <summary>
+        /// Control gvProductos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvProductos;
     }
 }
