@@ -10,11 +10,26 @@ namespace ProyectoGimnasio.AppModelo
         private int idRutina { get; set; }
         private String FechaInicio { get; set; }
         private String FechaFinalizacion { get; set; }
+        private int idInscripcion { get; set; }
 
-        public Rutina(String FechaInicio, String FechaFinalizacion)
+        public Rutina()
+        {
+
+        }
+
+        public Rutina(int idRutina, String FechaInicio, String FechaFinalizacion, int idInscripcion)
+        {
+            this.idRutina = idRutina;
+            this.FechaInicio = FechaInicio;
+            this.FechaFinalizacion = FechaFinalizacion;
+            this.idInscripcion = idInscripcion;
+        }
+
+        public Rutina(String FechaInicio, String FechaFinalizacion, int idInscripcion)
         {
             this.FechaInicio = FechaInicio;
             this.FechaFinalizacion = FechaFinalizacion;
+            this.idInscripcion = idInscripcion;
         }
 
     }

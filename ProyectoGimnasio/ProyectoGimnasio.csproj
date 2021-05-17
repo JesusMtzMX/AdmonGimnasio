@@ -107,6 +107,7 @@
     <Compile Include="AppModelo\DetalleRutina.cs" />
     <Compile Include="AppModelo\Ejercicio.cs" />
     <Compile Include="AppModelo\Entrenador.cs" />
+    <Compile Include="AppModelo\EntrenadorCliente.cs" />
     <Compile Include="AppModelo\Inscripcion.cs" />
     <Compile Include="AppModelo\Producto.cs" />
     <Compile Include="AppModelo\Rutina.cs" />

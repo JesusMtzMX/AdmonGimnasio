@@ -16,9 +16,15 @@ namespace ProyectoGimnasio.AppModelo
         public String Foto { get; set; }
         public String Estatus { get; set; }
 
-        public Producto(String Nombre, String Marca, String Contenido, String Categoria, String Descripcion, 
+        public Producto()
+        {
+
+        }
+
+        public Producto(int idProducto, String Nombre, String Marca, String Contenido, String Categoria, String Descripcion, 
             String Foto, String Estatus)
         {
+            this.idProducto = idProducto;
             this.Nombre = Nombre;
             this.Marca = Marca;
             this.Contenido = Contenido;
@@ -28,9 +34,16 @@ namespace ProyectoGimnasio.AppModelo
             this.Estatus = Estatus;
         }
 
-        public Producto()
+        public Producto(String Nombre, String Marca, String Contenido, String Categoria, String Descripcion,
+            String Foto, String Estatus)
         {
-
+            this.Nombre = Nombre;
+            this.Marca = Marca;
+            this.Contenido = Contenido;
+            this.Categoria = Categoria;
+            this.Descripcion = Descripcion;
+            this.Foto = Foto;
+            this.Estatus = Estatus;
         }
 
     }
