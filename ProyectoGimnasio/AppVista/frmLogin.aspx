@@ -5,15 +5,15 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
     <div class="container mt-5">
         <h3>A continuación ingrese sus datos para iniciar sesión</h3>
-        <div class="form__section">
-                <input type="email" class="form__input" placeholder="Email">
-            </div>
-            <div class="form__section">
-                <input type="password" class="form__input" placeholder="Clave de acceso">
-            </div>           
-            <div class="form__section">
-                <input type="submit" name="name" class="form__input" value="Ingresar" />
-            </div>
+        <div class="form__section">            
+            <asp:TextBox type="email" ID="txtEmail" TextMode="Email" autocomplete="off" class="form__input" placeholder="Email" runat="server" />
+        </div>
+        <div class="form__section">            
+            <asp:TextBox type="password" ID="txtClaveAcceso" class="form__input" placeholder="Clave de acceso" runat="server" />
+        </div>           
+        <div class="form__section">            
+            <asp:Button Text="Ingresar" ID="btnIngresar" CssClass="form__input" OnClick="btnIngresar_Click" runat="server" />
+        </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">

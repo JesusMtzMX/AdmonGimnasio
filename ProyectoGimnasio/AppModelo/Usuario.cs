@@ -7,9 +7,9 @@ namespace ProyectoGimnasio.AppModelo
 {
     public class Usuario
     {
-        private int idUsuario { get; set; }
-        private string Email { get; set; }
-        private string Clave { get; set; }
+        public int idUsuario { get; set; }
+        public string Email { get; set; }
+        public string Clave { get; set; }
 
         public Usuario()
         {

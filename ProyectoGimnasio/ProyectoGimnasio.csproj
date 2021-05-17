@@ -96,6 +96,7 @@
     <Compile Include="AppControlador\ClienteDAO.cs" />
     <Compile Include="AppControlador\DetalleRutinaDAO.cs" />
     <Compile Include="AppControlador\EjercicioDAO.cs" />
+    <Compile Include="AppControlador\EntrenadorClienteDAO.cs" />
     <Compile Include="AppControlador\EntrenadorDAO.cs" />
     <Compile Include="AppControlador\InscripcionDAO.cs" />
     <Compile Include="AppControlador\ProductoDAO.cs" />
