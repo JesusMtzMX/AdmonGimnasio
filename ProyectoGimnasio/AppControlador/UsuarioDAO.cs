@@ -16,7 +16,7 @@ namespace ProyectoGimnasio.AppControlador
         {
             try
             {
-                UTF8Encoding enc = new UTF8Encoding();
+                /*UTF8Encoding enc = new UTF8Encoding();
                 byte[] pass = enc.GetBytes(password);
                 byte[] result;
                 SHA1CryptoServiceProvider sha = new SHA1CryptoServiceProvider();
@@ -33,24 +33,28 @@ namespace ProyectoGimnasio.AppControlador
                         sb.Append("0");
                     }
                     sb.Append(result[i].ToString("x"));
-                }
+                }                */
 
-                //Devolvemos la cadena con el hash en mayúsculas para que quede más chuli :)
                 MySqlCommand sentencia = new MySqlCommand();
-                sentencia.CommandText = "SELECT * FROM usuarios where email = @email AND clave = @password";
+                sentencia.CommandText = "SELECT * FROM usuarios WHERE email = @email AND clave = @password";
                 sentencia.Parameters.AddWithValue("@email", email.ToLower());
-                sentencia.Parameters.AddWithValue("@password", sb.ToString().ToLower());
+                sentencia.Parameters.AddWithValue("@password", password.ToString());
+                
                 DataTable tabla = __Conexion.ejecutarConsulta(sentencia);
+                
                 Usuario us = null;
+                
                 if (tabla != null && tabla.Rows.Count > 0)
                 {
                     DataRow fila = tabla.Rows[0];
+
                     us = new Usuario(
-                   Convert.ToInt32(fila["id_usuario"].ToString()),
-                   fila["email"].ToString(),
-                   fila["_password"].ToString()                   
+                       Convert.ToInt32(fila["idUsuario"].ToString()),
+                       fila["email"].ToString(),
+                       fila["clave"].ToString()                   
                     );
                 }
+
                 return us;
             }
             catch (Exception ex)
@@ -63,6 +67,45 @@ namespace ProyectoGimnasio.AppControlador
             }
 
         }
+
+        public String getTipoUsuario(int idUsuario) //Se comprueba el tipo de usuario que inició sesión
+        {
+            MySqlCommand sentencia = new MySqlCommand();
+            sentencia.CommandText = "SELECT * FROM administradores WHERE idUsuario = @idUsuario";
+            sentencia.Parameters.AddWithValue("@idUsuario", idUsuario);
+
+            DataTable tabla = __Conexion.ejecutarConsulta(sentencia);            
+
+            if (tabla != null && tabla.Rows.Count > 0)
+            {
+                return "Administrador";
+            }
+
+            sentencia = new MySqlCommand();
+            sentencia.CommandText = "SELECT * FROM entrenadores WHERE idUsuario = @idUsuario";
+            sentencia.Parameters.AddWithValue("@idUsuario", idUsuario);
+
+            tabla = __Conexion.ejecutarConsulta(sentencia);
+
+            if (tabla != null && tabla.Rows.Count > 0)
+            {
+                return "Entrenador";
+            }
+
+            sentencia = new MySqlCommand();
+            sentencia.CommandText = "SELECT * FROM clientes WHERE idUsuario = @idUsuario";
+            sentencia.Parameters.AddWithValue("@idUsuario", idUsuario);
+
+            tabla = __Conexion.ejecutarConsulta(sentencia);
+
+            if (tabla != null && tabla.Rows.Count > 0)
+            {
+                return "Cliente";
+            }
+
+            return "Usuario no asociado a ninguna cuenta";
+        }
+
         public bool updatePassword(Usuario obj)
         {
             try

@@ -13,27 +13,34 @@ namespace ProyectoGimnasio.AppVista
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         protected void btnIngresar_Click(object sender, EventArgs e)
         {
             //Verificar los datos que llegan del cliente
             UsuarioDAO al = new UsuarioDAO();
+
             try
             {
-                Usuario u = al.iniciarSesion(txtEmail.Text.Trim(), txtClaveAcceso.Text.Trim());
+                Usuario u = al.iniciarSesion(txtEmail.Text.Trim(), txtClaveAcceso.Text);
+
                 if (u != null)
-                {                    
-                    Session["email_usuario"] = u.Email;
-                    Response.Redirect("frmInicio.aspx");
+                {
+                    Session["EmailUsuario"] = u.Email.ToString();
+                    Session["TipoUsuario"] = al.getTipoUsuario(u.idUsuario).ToString();
+                    txtSession.Text = u.idUsuario+"";
+                    //Response.Redirect("frmInicio.aspx");
                 }
                 else
                 {
                     //divMensaje.Visible = true;
-                    Session["tipo_usuario"] = "";
-                    Response.Redirect("frmAyuda.aspx");
+                    Session["TipoUsuario"] = "Datos no válidos";
+                    txtSession.Text = Session["TipoUsuario"].ToString();
+                    //Response.Redirect("frmAyuda.aspx");
                 }
+
+                
             }
             catch (Exception ex)
             {

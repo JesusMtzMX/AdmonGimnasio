@@ -23,9 +23,10 @@
                     <img class="barra-navegacion__logo-img" src="IMG/LogoGYM.png" alt="Logo"/>
                 </div>
                 <%
+                    
                     if(Session["TipoUsuario"] == null || Session["TipoUsuario"].ToString() == "")
                     {
-                        //Response.Redirect("../frmLogin.aspx");
+                        //Response.Redirect("frmLogin.aspx");
                         //Session["TipoUsuario"] = "";
                 %>
                 
@@ -44,15 +45,48 @@
                 %>
 
                 <ul class="barra-navegacion__ul">
-                    <li class="barra-navegacion__li-usuario">Administrador</li>
+                    <li class="barra-navegacion__li-usuario">Administrador</li> <!-- Cambiar por nombre del usuario-->
+                    <li class="barra-navegacion__li"><a href="#">Inicio</a></li>
+                    <li class="barra-navegacion__li"><a href="#">Mi perfil</a></li>
                     <li class="barra-navegacion__li"><a href="#">Clientes</a></li>
                     <li class="barra-navegacion__li"><a href="#">Productos</a></li>
-                    <li class="barra-navegacion__li"><a href="#">Información</a></li>
+                    <li class="barra-navegacion__li"><a href="#">Cerrar sesión</a></li>
+                </ul>
+
+                <%
+                    }                    
+                    else if(Session["TipoUsuario"].ToString() == "Entrenador")
+                    {
+                %>
+
+                <ul class="barra-navegacion__ul">
+                    <li class="barra-navegacion__li-usuario">Entrenador</li>
+                    <li class="barra-navegacion__li"><a href="#">Inicio</a></li>
+                    <li class="barra-navegacion__li"><a href="#">Mi Perfil</a></li>
+                    <li class="barra-navegacion__li"><a href="#">Mis asesorados</a></li>
+                    <li class="barra-navegacion__li"><a href="#">Productos</a></li>
+                    <li class="barra-navegacion__li"><a href="#">Cerrar sesión</a></li>
+                </ul>
+
+                <%
+                    }                                  
+                    else if(Session["TipoUsuario"].ToString() == "Cliente")
+                    {
+                %>
+
+                <ul class="barra-navegacion__ul">
+                    <li class="barra-navegacion__li-usuario">Cliente</li>
+                    <li class="barra-navegacion__li"><a href="#">Inicio</a></li>
+                    <li class="barra-navegacion__li"><a href="#">Mi Perfil</a></li>
+                    <li class="barra-navegacion__li"><a href="#">Mi rutina</a></li>
+                    <li class="barra-navegacion__li"><a href="#">Productos</a></li>
+                    <li class="barra-navegacion__li"><a href="#">Cerrar sesión</a></li>
                 </ul>
 
                 <%
                     }
                 %>
+
                     
             </div>
         </nav>

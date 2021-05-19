@@ -18,8 +18,8 @@ namespace ProyectoGimnasio.AppVista
 
         public void cargarProductos()
         {
-            gvProductos.DataSource = __Conexion.ejecutarConsulta
-                (new MySql.Data.MySqlClient.MySqlCommand("SELECT * FROM productos"));
+            ServiceReference1.wsProductosSoapClient ws = new ServiceReference1.wsProductosSoapClient();
+            gvProductos.DataSource = ws.GetProducts();
             gvProductos.DataBind();
         }
     }

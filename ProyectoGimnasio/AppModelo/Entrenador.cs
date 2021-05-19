@@ -7,13 +7,13 @@ namespace ProyectoGimnasio.AppModelo
 {
     public class Entrenador
     {
-        private int idEntrenador { get; set; }
-        private String Nombre { get; set; }
-        private String Apellidos { get; set; }
-        private String Domicilio { get; set; }
-        private String Telefono { get; set; }
-        private String Foto { get; set; }
-        private int idUsuario { get; set; }
+        public int idEntrenador { get; set; }
+        public String Nombre { get; set; }
+        public String Apellidos { get; set; }
+        public String Domicilio { get; set; }
+        public String Telefono { get; set; }
+        public String Foto { get; set; }
+        public int idUsuario { get; set; }
 
         public Entrenador()
         {
@@ -32,7 +32,8 @@ namespace ProyectoGimnasio.AppModelo
             this.idUsuario = idUsuario;
         }
 
-        public Entrenador(String Nombre, String Apellidos, String Domicilio, String Telefono, String Foto)
+        public Entrenador(String Nombre, String Apellidos, String Domicilio, String Telefono,
+            String Foto, int idUsuario)
         {
             this.Nombre = Nombre;
             this.Apellidos = Apellidos;

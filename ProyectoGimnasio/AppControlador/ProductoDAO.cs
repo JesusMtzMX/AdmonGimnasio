@@ -16,7 +16,8 @@ namespace ProyectoGimnasio.AppControlador
             {
                 List<Producto> lista = new List<Producto>();
 
-                MySqlCommand sentencia = new MySqlCommand();
+                MySqlCommand sentencia = new MySqlCommand();                                
+
                 sentencia.CommandText =
                     "SELECT * FROM productos;"; //cambiar a procedimientos almacenados
 
@@ -34,6 +35,7 @@ namespace ProyectoGimnasio.AppControlador
                        fila["Status"].ToString()
                         ));
                 }
+
                 return lista;
             }
             catch (Exception ex)

@@ -11,7 +11,13 @@ namespace ProyectoGimnasio.AppVista
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack) // Cuando se carga la página por primera vez (sin form o sin recargar)
+            {
+                if (Session["TipoUsuario"] == null || Session["TipoUsuario"].ToString() == "")
+                {
+                    //Response.Redirect("frmLogin.aspx");
+                }
+            }
         }
     }
 }
