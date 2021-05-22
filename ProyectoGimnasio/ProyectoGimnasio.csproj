@@ -73,13 +73,14 @@
     <Content Include="AppVista\Administracion\ejercicios.xml" />
     <Content Include="AppVista\Administracion\frmAdministracionRutinas.aspx" />
     <Content Include="AppVista\Administracion\frmAdministrarProductos.aspx" />
+    <Content Include="AppVista\Administracion\frmRegistrarAdministrador.aspx" />
     <Content Include="AppVista\Administracion\gruposMusculares.xml" />
     <Content Include="AppVista\CSS\base_style.css" />
     <Content Include="AppVista\CSS\inicio_style.css" />
     <Content Include="AppVista\CSS\login_style.css" />
     <Content Include="AppVista\CSS\normalize.css" />
     <Content Include="AppVista\frmAyuda.aspx" />
-    <Content Include="AppVista\frmClientes.aspx" />
+    <Content Include="AppVista\Administracion\frmClientes.aspx" />
     <Content Include="AppVista\frmInicio.aspx" />
     <Content Include="AppVista\frmLogin.aspx" />
     <Content Include="AppVista\frmPerfilUsuario.aspx" />
@@ -87,8 +88,10 @@
     <Content Include="AppVista\IMG\img-barra-pesas.jpg" />
     <Content Include="AppVista\IMG\LogoGYM.png" />
     <Content Include="AppVista\JS\administrarProductos.js" />
+    <Content Include="AppVista\JS\admonRegistrarAdministrador.js" />
     <Content Include="AppVista\JS\admonRutinas.js" />
     <Content Include="AppVista\JS\ayuda.js" />
+    <Content Include="AppVista\JS\bootstrapValidator.js" />
     <Content Include="AppVista\JS\inicio_js.js" />
     <Content Include="AppVista\JS\login.js" />
     <Content Include="AppVista\JS\productos.js" />
@@ -99,6 +102,7 @@
     <Content Include="Connected Services\ServiceReference1\ProyectoGimnasio.ServiceReference1.Producto.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="AppVista\Empleados\EntrenadoresMP.Master" />
     <None Include="Connected Services\ServiceReference1\wsProductos.disco" />
     <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
     <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
@@ -146,6 +150,20 @@
     <Compile Include="AppVista\Administracion\frmAdministrarProductos.aspx.designer.cs">
       <DependentUpon>frmAdministrarProductos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AppVista\Administracion\frmRegistrarAdministrador.aspx.cs">
+      <DependentUpon>frmRegistrarAdministrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppVista\Administracion\frmRegistrarAdministrador.aspx.designer.cs">
+      <DependentUpon>frmRegistrarAdministrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AppVista\Empleados\EntrenadoresMP.Master.cs">
+      <DependentUpon>EntrenadoresMP.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppVista\Empleados\EntrenadoresMP.Master.designer.cs">
+      <DependentUpon>EntrenadoresMP.Master</DependentUpon>
+    </Compile>
     <Compile Include="AppVista\frmAyuda.aspx.cs">
       <DependentUpon>frmAyuda.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -153,11 +171,11 @@
     <Compile Include="AppVista\frmAyuda.aspx.designer.cs">
       <DependentUpon>frmAyuda.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AppVista\frmClientes.aspx.cs">
+    <Compile Include="AppVista\Administracion\frmClientes.aspx.cs">
       <DependentUpon>frmClientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AppVista\frmClientes.aspx.designer.cs">
+    <Compile Include="AppVista\Administracion\frmClientes.aspx.designer.cs">
       <DependentUpon>frmClientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="AppVista\frmInicio.aspx.cs">
@@ -227,6 +245,7 @@
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
