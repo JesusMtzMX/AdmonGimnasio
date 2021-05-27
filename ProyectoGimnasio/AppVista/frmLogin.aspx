@@ -3,8 +3,10 @@
     <link href="CSS/login_style.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
-    <div class="container mt-5">
-        <h3>Ingrese sus datos para iniciar sesión</h3>
+    
+    <!-- Contenedor del formulario login -->
+    <h3>Ingrese sus datos para iniciar sesión</h3>
+    <div class="container w-75 mt-2 py-5 card bg-transparent rounded">        
         <div class="form__section">            
             <asp:TextBox type="email" ID="txtEmail" TextMode="Email" autocomplete="off" class="form__input" placeholder="Email" runat="server" />
         </div>
@@ -16,11 +18,11 @@
         </div>
     </div>
     <div class="container mt-5">
-        <div class="text-center">
+        <div class="text-center pb-3">
             <h5 class="small">Si aún no tienes cuenta, puedes crearla de forma gratuita</h5>
         </div>
         <div>
-            <button type="button" class="btn btn-sm btn-primary rounded rounded-pill">
+            <button type="button" id="btnCrearCuenta" onclick="gotoCrearCuenta()" class="btn btn-sm btn-primary rounded rounded-pill">
                 <span class="font-weight-bold">CREAR CUENTA</span>
             </button>
         </div>
