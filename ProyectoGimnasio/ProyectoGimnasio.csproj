@@ -82,11 +82,11 @@
     <Content Include="AppVista\CSS\normalize.css" />
     <Content Include="AppVista\frmAyuda.aspx" />
     <Content Include="AppVista\Administracion\frmClientes.aspx" />
+    <Content Include="AppVista\frmIniciarSesion.aspx" />
     <Content Include="AppVista\frmInicio.aspx" />
-    <Content Include="AppVista\frmLogin.aspx" />
     <Content Include="AppVista\frmPerfilUsuario.aspx" />
     <Content Include="AppVista\frmProductos.aspx" />
-    <Content Include="AppVista\frmRegistroCliente.aspx" />
+    <Content Include="AppVista\frmRegistrarCliente.aspx" />
     <Content Include="AppVista\IMG\img-barra-pesas.jpg" />
     <Content Include="AppVista\IMG\LogoGYM.png" />
     <Content Include="AppVista\JS\administrarProductos.js" />
@@ -181,19 +181,19 @@
     <Compile Include="AppVista\Administracion\frmClientes.aspx.designer.cs">
       <DependentUpon>frmClientes.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AppVista\frmIniciarSesion.aspx.cs">
+      <DependentUpon>frmIniciarSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppVista\frmIniciarSesion.aspx.designer.cs">
+      <DependentUpon>frmIniciarSesion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AppVista\frmInicio.aspx.cs">
       <DependentUpon>frmInicio.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AppVista\frmInicio.aspx.designer.cs">
       <DependentUpon>frmInicio.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="AppVista\frmLogin.aspx.cs">
-      <DependentUpon>frmLogin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AppVista\frmLogin.aspx.designer.cs">
-      <DependentUpon>frmLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="AppVista\frmPerfilUsuario.aspx.cs">
       <DependentUpon>frmPerfilUsuario.aspx</DependentUpon>
@@ -209,12 +209,12 @@
     <Compile Include="AppVista\frmProductos.aspx.designer.cs">
       <DependentUpon>frmProductos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AppVista\frmRegistroCliente.aspx.cs">
-      <DependentUpon>frmRegistroCliente.aspx</DependentUpon>
+    <Compile Include="AppVista\frmRegistrarCliente.aspx.cs">
+      <DependentUpon>frmRegistrarCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AppVista\frmRegistroCliente.aspx.designer.cs">
-      <DependentUpon>frmRegistroCliente.aspx</DependentUpon>
+    <Compile Include="AppVista\frmRegistrarCliente.aspx.designer.cs">
+      <DependentUpon>frmRegistrarCliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="AppVista\MasterPages\Base.Master.cs">
       <DependentUpon>Base.Master</DependentUpon>

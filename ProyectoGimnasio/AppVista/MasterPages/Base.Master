@@ -41,10 +41,10 @@
                     %>
                 
                 <ul class="navbar-nav mr-auto barra-navegacion__ul">
-                    <li class="nav-item barra-navegacion__li-usuario">Invitado</li>
+                    <li class="nav-item barra-navegacion__li-usuario"><span class="badge badge-dark">Invitado</span></li>
                     <li class="nav-item barra-navegacion__li" id="li-inicio"><i class="fas fa-home"></i><a id="inicio" href="frmInicio.aspx">Inicio</a></li>
-                    <li class="nav-item barra-navegacion__li"><i class="fas fa-user"></i><a id="iniciar-sesion" href="frmLogin.aspx">Iniciar sesión</a></li>                    
-                    <li class="nav-item barra-navegacion__li"><i class="fas fa-dollar-sign"></i><a id="productos" href="frmProductos.aspx">Productos</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-user"></i><a id="iniciar-sesion" href="frmIniciarSesion.aspx">Iniciar sesión</a></li>                    
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-capsules"></i><a id="productos" href="frmProductos.aspx">Productos</a></li>
                     <li class="nav-item barra-navegacion__li"><i class="fas fa-question-circle"></i><a id="ayuda" href="frmAyuda.aspx">Ayuda</a></li>
                 </ul>
 
@@ -55,12 +55,12 @@
                 %>
 
                 <ul class="navbar-nav mr-auto barra-navegacion__ul">
-                    <li class="nav-item barra-navegacion__li-usuario">Administrador</li> <!-- Cambiar por nombre del usuario-->
-                    <li class="nav-item barra-navegacion__li"><a href="#">Inicio</a></li>
-                    <li class="nav-item barra-navegacion__li"><a href="#">Mi perfil</a></li>
-                    <li class="nav-item barra-navegacion__li"><a href="#">Clientes</a></li>
-                    <li class="nav-item barra-navegacion__li"><a href="#">Productos</a></li>
-                    <li class="nav-item barra-navegacion__li"><a href="#">Cerrar sesión</a></li>
+                    <li class="nav-item barra-navegacion__li-usuario"><span class="badge badge-dark">Administrador</span></li> <!-- Cambiar por nombre del usuario-->
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-home"></i><a href="frmInicio.aspx">Inicio</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="far fa-user"></i><a href="#">Mi perfil</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-users"></i><a href="#">Clientes</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-capsules"></i><a href="frmProductos.aspx">Productos</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-sign-out-alt"></i><a href="#">Cerrar sesión</a></li>
                 </ul>
 
                 <%
@@ -70,12 +70,12 @@
                 %>
 
                 <ul class="navbar-nav mr-auto barra-navegacion__ul">
-                    <li class="nav-item barra-navegacion__li-usuario">Entrenador</li>
-                    <li class="nav-item barra-navegacion__li"><a href="#">Inicio</a></li>
-                    <li class="nav-item barra-navegacion__li"><a href="#">Mi Perfil</a></li>
-                    <li class="nav-item barra-navegacion__li"><a href="#">Mis asesorados</a></li>
-                    <li class="nav-item barra-navegacion__li"><a href="#">Productos</a></li>
-                    <li class="nav-item barra-navegacion__li"><a href="#">Cerrar sesión</a></li>
+                    <li class="nav-item barra-navegacion__li-usuario"><span class="badge badge-dark">Entrenador</span></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-home"></i><a href="frmInicio.aspx">Inicio</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="far fa-user"></i><a href="#">Mi Perfil</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-users"></i><a href="#">Mis asesorados</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-capsules"></i><a href="frmProductos.aspx">Productos</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-sign-out-alt"></i><a href="#">Cerrar sesión</a></li>
                 </ul>
 
                 <%
@@ -85,12 +85,12 @@
                 %>
 
                 <ul class="navbar-nav mr-auto barra-navegacion__ul">
-                    <li class="nav-item barra-navegacion__li-usuario">Cliente</li>
-                    <li class="nav-item barra-navegacion__li"><a href="#">Inicio</a></li>
-                    <li class="nav-item barra-navegacion__li"><a href="#">Mi Perfil</a></li>
-                    <li class="nav-item barra-navegacion__li"><a href="#">Mi rutina</a></li>
-                    <li class="nav-item barra-navegacion__li"><a href="#">Productos</a></li>
-                    <li class="nav-item barra-navegacion__li"><a href="#">Cerrar sesión</a></li>
+                    <li class="nav-item barra-navegacion__li-usuario"><span class="badge badge-dark">Cliente</span></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-home"></i><a href="frmInicio.aspx">Inicio</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="far fa-user"></i><a href="#">Mi Perfil</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-dumbbell"></i><a href="#">Mi rutina</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-capsules"></i><a href="frmProductos.aspx">Productos</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-sign-out-alt"></i><a href="#">Cerrar sesión</a></li>
                 </ul>
 
                 <%

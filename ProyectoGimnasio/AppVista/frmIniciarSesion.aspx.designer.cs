@@ -11,8 +11,17 @@ namespace ProyectoGimnasio.AppVista
 {
 
 
-    public partial class frmLogin
+    public partial class frmIniciarSesion
     {
+
+        /// <summary>
+        /// Control frmLogin.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm frmLogin;
 
         /// <summary>
         /// Control txtEmail.
@@ -40,14 +49,5 @@ namespace ProyectoGimnasio.AppVista
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnIngresar;
-
-        /// <summary>
-        /// Control txtSession.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label txtSession;
     }
 }

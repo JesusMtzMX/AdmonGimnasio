@@ -1,4 +1,12 @@
-﻿.form {
+﻿body {
+    background: radial-gradient(#CDF, #FFF);
+}
+
+.form__section{
+    padding-bottom: 1rem;
+}
+
+.form {
     min-width: 250px;
     flex: 1;
     text-align: center;
@@ -8,13 +16,14 @@
 
 .form__input {
     width: 90%;
-    padding: 8px;
+    padding: 6px;
     margin: 8px 0;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     border-bottom: 3px solid #4EABCD;
     background: transparent;
-    color: #454545;    
+    color: #454545;
+    font-size: 22px;
 }
 
 .form__input:focus {
@@ -43,22 +52,14 @@
     width: 100%;
 }*/
 
-.form input[type="submit"] {
-    background: #2EAABC;
-    border-bottom: none;
-    border-radius: 12px;
-    padding: 12px;
-    transition: all 0.25s;
+.btn-login:hover {
+    background: #28AA;
 }
 
-.form input[type="submit"]:hover {
-    background: #1EAABC;
-}
-
-.form input[type="submit"]:focus {    
+.btn-login:focus {
     background: linear-gradient(to bottom, #757575,#A5A5D5);
 }
 
-.form input[type="submit"]:active {
+.btn-login:active {
     background: #2ECECC;
 }

@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace ProyectoGimnasio.AppVista
 {
-    public partial class frmRegistrarUsuario : System.Web.UI.Page
+    public partial class frmRegistrarUsuario1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

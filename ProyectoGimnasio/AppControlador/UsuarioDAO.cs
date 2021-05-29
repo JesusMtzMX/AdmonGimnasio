@@ -7,16 +7,31 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Web;
+using System.Web.Services;
 
 namespace ProyectoGimnasio.AppControlador
 {
     public class UsuarioDAO
     {
+        [WebMethod]
+        public string GetUsuario(String email, String password)
+        {
+            Usuario user = iniciarSesion(email, password);
+
+            if(user != null)
+            {
+                return getTipoUsuario(user.idUsuario);
+            }
+            
+            return "Usuario no encontrado";
+        }
+
+
         public Usuario iniciarSesion(String email, String password)
         {
             try
             {
-                /*UTF8Encoding enc = new UTF8Encoding();
+                UTF8Encoding enc = new UTF8Encoding();
                 byte[] pass = enc.GetBytes(password);
                 byte[] result;
                 SHA1CryptoServiceProvider sha = new SHA1CryptoServiceProvider();
@@ -33,12 +48,12 @@ namespace ProyectoGimnasio.AppControlador
                         sb.Append("0");
                     }
                     sb.Append(result[i].ToString("x"));
-                }                */
+                }
 
                 MySqlCommand sentencia = new MySqlCommand();
                 sentencia.CommandText = "SELECT * FROM usuarios WHERE email = @email AND clave = @password";
                 sentencia.Parameters.AddWithValue("@email", email.ToLower());
-                sentencia.Parameters.AddWithValue("@password", password.ToString());
+                sentencia.Parameters.AddWithValue("@password", sb.ToString());
                 
                 DataTable tabla = __Conexion.ejecutarConsulta(sentencia);
                 

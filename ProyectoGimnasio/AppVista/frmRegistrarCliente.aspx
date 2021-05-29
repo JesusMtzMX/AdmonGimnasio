@@ -1,8 +1,15 @@
-﻿<%@ Page Title="Registrar Cliente" Language="C#" MasterPageFile="~/AppVista/MasterPages/Base.Master" AutoEventWireup="true" CodeBehind="frmRegistroCliente.aspx.cs" Inherits="ProyectoGimnasio.AppVista.frmRegistrarUsuario" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
-    <div class="container border rounded bg-dark my-4 text-center">
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="frmRegistrarCliente.aspx.cs" Inherits="ProyectoGimnasio.AppVista.frmRegistrarUsuario1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container border rounded bg-dark my-4 text-center">
             <h4 class="text-info"> Complete los campos que a continuación se solicitan </h4>            
         </div>
         <div class="container bg-light font-weight-bold border border-dark rounded py-4">
@@ -53,7 +60,6 @@
                 </div>
             </div>
         </div>
-</asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">    
-    <script src="JS/clienteRegistroCliente.js"></script>
-</asp:Content>
+    </form>
+</body>
+</html>
