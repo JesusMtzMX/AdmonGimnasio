@@ -84,7 +84,6 @@
     <Content Include="AppVista\Administracion\frmClientes.aspx" />
     <Content Include="AppVista\frmIniciarSesion.aspx" />
     <Content Include="AppVista\frmInicio.aspx" />
-    <Content Include="AppVista\frmPerfilUsuario.aspx" />
     <Content Include="AppVista\frmProductos.aspx" />
     <Content Include="AppVista\frmRegistrarCliente.aspx" />
     <Content Include="AppVista\IMG\img-barra-pesas.jpg" />
@@ -106,6 +105,7 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="AppVista\Empleados\EntrenadoresMP.Master" />
+    <Content Include="AppVista\frmPerfilUsuario.Master" />
     <None Include="Connected Services\ServiceReference1\wsProductos.disco" />
     <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
     <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
@@ -195,12 +195,12 @@
     <Compile Include="AppVista\frmInicio.aspx.designer.cs">
       <DependentUpon>frmInicio.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AppVista\frmPerfilUsuario.aspx.cs">
-      <DependentUpon>frmPerfilUsuario.aspx</DependentUpon>
+    <Compile Include="AppVista\frmPerfilUsuario.Master.cs">
+      <DependentUpon>frmPerfilUsuario.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AppVista\frmPerfilUsuario.aspx.designer.cs">
-      <DependentUpon>frmPerfilUsuario.aspx</DependentUpon>
+    <Compile Include="AppVista\frmPerfilUsuario.Master.designer.cs">
+      <DependentUpon>frmPerfilUsuario.Master</DependentUpon>
     </Compile>
     <Compile Include="AppVista\frmProductos.aspx.cs">
       <DependentUpon>frmProductos.aspx</DependentUpon>
@@ -242,6 +242,7 @@
     <Content Include="AppVista\MasterPages\Base.Master" />
     <None Include="Connected Services\ServiceReference1\wsProductos.wsdl" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

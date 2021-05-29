@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AppVista/MasterPages/Base.Master" AutoEventWireup="true" CodeBehind="frmInicio.aspx.cs" Inherits="ProyectoGimnasio.AppVista.frmInicio" %>
+﻿<%@ Page Title="The Central GYM - Inicio" Language="C#" MasterPageFile="~/AppVista/MasterPages/Base.Master" AutoEventWireup="true" CodeBehind="frmInicio.aspx.cs" Inherits="ProyectoGimnasio.AppVista.frmInicio" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <title>Página de inicio</title>
     <link href="CSS/inicio_style.css" rel="stylesheet" />

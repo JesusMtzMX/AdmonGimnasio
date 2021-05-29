@@ -89,10 +89,10 @@ namespace ProyectoGimnasio.AppControlador
             sentencia.CommandText = "SELECT * FROM administradores WHERE idUsuario = @idUsuario";
             sentencia.Parameters.AddWithValue("@idUsuario", idUsuario);
 
-            DataTable tabla = __Conexion.ejecutarConsulta(sentencia);            
+            DataTable tabla = __Conexion.ejecutarConsulta(sentencia);
 
             if (tabla != null && tabla.Rows.Count > 0)
-            {
+            {                
                 return "Administrador";
             }
 
