@@ -1,3 +1,3 @@
-﻿let liActive = document.querySelector("#productos");
+﻿let liActive = document.querySelector(".liProductos");
 liActive.classList = "active-section";
 

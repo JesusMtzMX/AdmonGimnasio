@@ -11,70 +11,61 @@ namespace ProyectoGimnasio.AppVista
 {
 
 
-    public partial class frmAyuda
+    public partial class frmPerfilCliente
     {
 
         /// <summary>
-        /// Control txtNumeroUno.
+        /// Control lblNombreUsuarioCliente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNumeroUno;
+        protected global::System.Web.UI.WebControls.Label lblNombreUsuarioCliente;
 
         /// <summary>
-        /// Control txtNumeroDos.
+        /// Control lblApellidosUsuarioCliente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNumeroDos;
+        protected global::System.Web.UI.WebControls.Label lblApellidosUsuarioCliente;
 
         /// <summary>
-        /// Control lblResultado.
+        /// Control lblEdadCliente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblResultado;
+        protected global::System.Web.UI.WebControls.Label lblEdadCliente;
 
         /// <summary>
-        /// Control btnSumar.
+        /// Control lblPesoCliente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSumar;
+        protected global::System.Web.UI.WebControls.Label lblPesoCliente;
 
         /// <summary>
-        /// Control btnRestar.
+        /// Control lblEstaturaCliente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnRestar;
+        protected global::System.Web.UI.WebControls.Label lblEstaturaCliente;
 
         /// <summary>
-        /// Control btnMultiplicar.
+        /// Control Label1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnMultiplicar;
-
-        /// <summary>
-        /// Control btnDividir.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnDividir;
+        protected global::System.Web.UI.WebControls.Label Label1;
     }
 }

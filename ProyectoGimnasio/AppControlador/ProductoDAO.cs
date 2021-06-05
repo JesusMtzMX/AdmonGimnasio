@@ -47,6 +47,7 @@ namespace ProyectoGimnasio.AppControlador
                 __Conexion.desconectar();
             }
         }
+        
         /*public List<DatosContacto> getOne(int id_empresa)
         {
             try

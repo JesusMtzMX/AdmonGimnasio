@@ -1,2 +1,2 @@
-﻿let liActive = document.querySelector("#inicio");
+﻿let liActive = document.querySelector(".liInicio");
 liActive.classList = "active-section";

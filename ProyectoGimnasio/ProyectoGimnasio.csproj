@@ -84,8 +84,10 @@
     <Content Include="AppVista\Administracion\frmClientes.aspx" />
     <Content Include="AppVista\frmIniciarSesion.aspx" />
     <Content Include="AppVista\frmInicio.aspx" />
+    <Content Include="AppVista\frmPerfilCliente.aspx" />
     <Content Include="AppVista\frmProductos.aspx" />
     <Content Include="AppVista\frmRegistrarCliente.aspx" />
+    <Content Include="AppVista\frmRutinaCliente.aspx" />
     <Content Include="AppVista\IMG\img-barra-pesas.jpg" />
     <Content Include="AppVista\IMG\LogoGYM.png" />
     <Content Include="AppVista\JS\administrarProductos.js" />
@@ -96,6 +98,7 @@
     <Content Include="AppVista\JS\clienteRegistroCliente.js" />
     <Content Include="AppVista\JS\inicio_js.js" />
     <Content Include="AppVista\JS\login.js" />
+    <Content Include="AppVista\JS\perfilCliente.js" />
     <Content Include="AppVista\JS\productos.js" />
     <Content Include="AppVista\JS\tablaEjercicios.js" />
     <Content Include="Connected Services\ServiceReference1\ProyectoGimnasio.ServiceReference1.GetProductsResponse.datasource">
@@ -105,11 +108,17 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="AppVista\Empleados\EntrenadoresMP.Master" />
-    <Content Include="AppVista\frmPerfilUsuario.Master" />
     <None Include="Connected Services\ServiceReference1\wsProductos.disco" />
     <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
     <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
     <None Include="Connected Services\ServiceReference1\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\wsCalculadora\calculator.disco" />
+    <None Include="Connected Services\wsCalculadora\configuration91.svcinfo" />
+    <None Include="Connected Services\wsCalculadora\configuration.svcinfo" />
+    <None Include="Connected Services\wsCalculadora\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -195,12 +204,12 @@
     <Compile Include="AppVista\frmInicio.aspx.designer.cs">
       <DependentUpon>frmInicio.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AppVista\frmPerfilUsuario.Master.cs">
-      <DependentUpon>frmPerfilUsuario.Master</DependentUpon>
+    <Compile Include="AppVista\frmPerfilCliente.aspx.cs">
+      <DependentUpon>frmPerfilCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AppVista\frmPerfilUsuario.Master.designer.cs">
-      <DependentUpon>frmPerfilUsuario.Master</DependentUpon>
+    <Compile Include="AppVista\frmPerfilCliente.aspx.designer.cs">
+      <DependentUpon>frmPerfilCliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="AppVista\frmProductos.aspx.cs">
       <DependentUpon>frmProductos.aspx</DependentUpon>
@@ -216,6 +225,13 @@
     <Compile Include="AppVista\frmRegistrarCliente.aspx.designer.cs">
       <DependentUpon>frmRegistrarCliente.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AppVista\frmRutinaCliente.aspx.cs">
+      <DependentUpon>frmRutinaCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppVista\frmRutinaCliente.aspx.designer.cs">
+      <DependentUpon>frmRutinaCliente.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AppVista\MasterPages\Base.Master.cs">
       <DependentUpon>Base.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -224,6 +240,11 @@
       <DependentUpon>Base.Master</DependentUpon>
     </Compile>
     <Compile Include="Connected Services\ServiceReference1\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\wsCalculadora\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -241,6 +262,7 @@
   <ItemGroup>
     <Content Include="AppVista\MasterPages\Base.Master" />
     <None Include="Connected Services\ServiceReference1\wsProductos.wsdl" />
+    <None Include="Connected Services\wsCalculadora\calculator.wsdl" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
     <None Include="Web.Debug.config">
@@ -255,6 +277,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\ServiceReference1\" />
+    <WCFMetadataStorage Include="Connected Services\wsCalculadora\" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

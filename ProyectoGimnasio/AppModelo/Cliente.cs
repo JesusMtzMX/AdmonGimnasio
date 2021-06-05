@@ -7,14 +7,14 @@ namespace ProyectoGimnasio.AppModelo
 {
     public class Cliente
     {
-        private int idCliente { get; set; }
-        private String Nombre { get; set; }
-        private String Apellidos { get; set; }
-        private int Edad { get; set; }
-        private double Peso { get; set; }
-        private double Estatura { get; set; }
-        private String Foto { get; set; }
-        private int idUsuario { get; set; }
+        public int idCliente { get; set; }
+        public String Nombre { get; set; }
+        public String Apellidos { get; set; }
+        public int Edad { get; set; }
+        public double Peso { get; set; }
+        public double Estatura { get; set; }
+        public String Foto { get; set; }
+        public int idUsuario { get; set; }
 
         public Cliente()
         {

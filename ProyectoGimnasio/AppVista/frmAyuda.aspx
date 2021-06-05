@@ -4,24 +4,37 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Main" runat="server">
     <div class="container mt-3">
         <h3>Acerca de nosotros</h3>
+        <p>A todos nuestros usuarios:</p>
         <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Ea, quidem tenetur adipisci illum magni dolores voluptatibus repellendus totam voluptate, 
-            officiis modi? Illo ab doloremque cupiditate ea nihil harum, quos, 
-            est nemo quam error consequatur ratione ducimus architecto accusantium aut similique expedita
-            sint laborum voluptates voluptate blanditiis temporibus accusamus alias! Laborum molestias quis aut maxime quae,
-            sapiente placeat, numquam quam eaque assumenda ea vel architecto praesentium deserunt esse! Distinctio quis cumque ad aliquid nulla nam consequatur omnis voluptates corporis labore, in dolorum fugit molestiae sunt quod ipsam laboriosam quibusdam provident? Doloribus odit a,
-            eaque aut autem expedita rem nesciunt aliquam sequi laudantium cupiditate nostrum sed corrupti ex alias?
-            Magni aut enim explicabo natus expedita fugit dolores necessitatibus quam! Cupiditate natus consequuntur
-            consectetur vitae rem accusantium consequatur iure modi quae repellendus nisi,
-            tempore debitis maxime magni temporibus, omnis unde repellat quo totam adipisci officiis harum.
-            Dicta tempora nam, perspiciatis debitis ipsum distinctio. Quae, totam pariatur repellat ab hic similique natus,
-            expedita fugiat in dicta aut illum veritatis impedit dolores sequi reiciendis beatae repellendus ipsam quas magni ex,
-            debitis iste. Non aperiam quam aliquid provident minima voluptatem! Perspiciatis, veniam? Ipsum expedita molestias dolores illo,
-            eveniet dignissimos debitis, quae modi aperiam id mollitia iure deserunt incidunt consequatur cupiditate et omnis!
-            Quibusdam non doloremque alias, ex reprehenderit totam consequatur et eligendi quae ullam? Recusandae blanditiis impedit debitis repellendus.
-            
+            Muchas gracias por su preferencia. The Central GYM es un centro deportivo que tiene
+            como objetivo ofrecer un servicio de calidad, apoyando a toda aquella persona que está 
+            empezando su camino de buenos hábitos para mejorar su aspecto físico, pero aún más importante,
+            su <b>salud</b>.
         </p>
+        <p>
+            Nuestra prioridad eres tú. Es por ello que hacemos todo lo posible por brindarte la mejor
+            atención, con los mejores entrenadores que te guiarán hacia tus metas.
+        </p>
+    </div>
+    <div class="mb-5 pb-5">        
+        <div class="container">
+            <small>Easter egg (Calculadora web service)</small>
+            <hr />
+            <div class="mb-2">
+                <asp:TextBox ID="txtNumeroUno" TextMode="Number" Text="0" CssClass="col-sm-4 form-control bg-transparent border-top-0 border-left-0 border-right-0 border-bottom border-dark" placeholder="Número 1" runat="server" />
+            </div>
+            <div>
+                <asp:TextBox ID="txtNumeroDos" TextMode="Number" Text="0" CssClass="col-sm-4 form-control bg-transparent border-top-0 border-left-0 border-right-0 border-bottom border-dark" placeholder="Número 2" runat="server" />
+            </div>
+            <hr />
+            <div class="mt-3 mb-3">
+                <asp:Label ID="lblResultado" CssClass="col-sm-4 form-control bg-transparent border-top-0 border-left-0 border-right-0 border-bottom border-info" placeholder="Resultado" runat="server" />
+            </div>
+            <asp:Button ID="btnSumar" CssClass="btn btn-group-sm btn-primary" Text="Sumar" runat="server" OnClick="btnSumar_Click" />
+            <asp:Button ID="btnRestar" CssClass="btn btn-group-sm btn-warning" Text="Restar" runat="server" OnClick="btnRestar_Click" />
+            <asp:Button ID="btnMultiplicar" CssClass="btn btn-group-sm btn-success" Text="Multiplicar" runat="server" OnClick="btnMultiplicar_Click" />
+            <asp:Button ID="btnDividir" CssClass="btn btn-group-sm btn-secondary" Text="Dividir" runat="server" OnClick="btnDividir_Click" />            
+        </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Scripts" runat="server">

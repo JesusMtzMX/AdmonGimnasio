@@ -1,2 +1,2 @@
-﻿let liActive = document.querySelector("#ayuda");
+﻿let liActive = document.querySelector(".liAyuda");
 liActive.classList = "active-section";

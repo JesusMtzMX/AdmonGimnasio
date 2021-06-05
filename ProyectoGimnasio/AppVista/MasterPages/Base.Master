@@ -2,18 +2,20 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="es">
 <head runat="server">
     <title>Bienvenidos</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
     <link href="../CSS/normalize.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"/>
     <link href="../CSS/base_style.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/a67dc84222.js" crossorigin="anonymous"></script>
+    
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+
 </head>
 <body>
     <header class="header"> <!-- En el header se carga la navbar para los diferentes tipos de usuarios -->
@@ -42,10 +44,10 @@
                 
                 <ul class="navbar-nav mr-auto barra-navegacion__ul">
                     <li class="nav-item barra-navegacion__li-usuario"><span class="badge badge-dark">Invitado</span></li>
-                    <li class="nav-item barra-navegacion__li" id="li-inicio"><i class="fas fa-home"></i><a id="inicio" href="frmInicio.aspx">Inicio</a></li>
-                    <li class="nav-item barra-navegacion__li"><i class="fas fa-user"></i><a id="iniciar-sesion" href="frmIniciarSesion.aspx">Iniciar sesión</a></li>                    
-                    <li class="nav-item barra-navegacion__li"><i class="fas fa-capsules"></i><a id="productos" href="frmProductos.aspx">Productos</a></li>
-                    <li class="nav-item barra-navegacion__li"><i class="fas fa-question-circle"></i><a id="ayuda" href="frmAyuda.aspx">Ayuda</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-home"></i><a class="liInicio" href="frmInicio.aspx">Inicio</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-user"></i><a class="liIniciar-sesion" href="frmIniciarSesion.aspx">Iniciar sesión</a></li>                    
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-capsules"></i><a class="liProductos" href="frmProductos.aspx">Productos</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-question-circle"></i><a class="liAyuda" href="frmAyuda.aspx">Ayuda</a></li>
                 </ul>
 
                 <%  
@@ -56,10 +58,11 @@
 
                 <ul class="navbar-nav mr-auto barra-navegacion__ul">
                     <li class="nav-item barra-navegacion__li-usuario"><span class="badge badge-dark">Administrador</span></li> <!-- Cambiar por nombre del usuario-->
-                    <li class="nav-item barra-navegacion__li"><i class="fas fa-home"></i><a href="frmInicio.aspx">Inicio</a></li>
-                    <li class="nav-item barra-navegacion__li"><i class="far fa-user"></i><a href="#">Mi perfil</a></li>
-                    <li class="nav-item barra-navegacion__li"><i class="fas fa-users"></i><a href="#">Clientes</a></li>
-                    <li class="nav-item barra-navegacion__li"><i class="fas fa-capsules"></i><a href="frmProductos.aspx">Productos</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-home"></i><a class="liInicio" href="frmInicio.aspx">Inicio</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="far fa-user"></i><a class="liPerfil" href="#">Mi perfil</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-users"></i><a class="liClientes" href="#">Clientes</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-capsules"></i><a class="liProductos" href="frmProductos.aspx">Productos</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-users-cog"></i><a class="liAdmon" href="#">Administración</a></li>
                     <li class="nav-item barra-navegacion__li"><i class="fas fa-sign-out-alt"></i><a href="#">Cerrar sesión</a></li>
                 </ul>
 
@@ -71,10 +74,10 @@
 
                 <ul class="navbar-nav mr-auto barra-navegacion__ul">
                     <li class="nav-item barra-navegacion__li-usuario"><span class="badge badge-dark">Entrenador</span></li>
-                    <li class="nav-item barra-navegacion__li"><i class="fas fa-home"></i><a href="frmInicio.aspx">Inicio</a></li>
-                    <li class="nav-item barra-navegacion__li"><i class="far fa-user"></i><a href="#">Mi Perfil</a></li>
-                    <li class="nav-item barra-navegacion__li"><i class="fas fa-users"></i><a href="#">Mis asesorados</a></li>
-                    <li class="nav-item barra-navegacion__li"><i class="fas fa-capsules"></i><a href="frmProductos.aspx">Productos</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-home"></i><a class="liInicio" href="frmInicio.aspx">Inicio</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="far fa-user"></i><a class="liPerfil" href="#">Mi Perfil</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-users"></i><a class="liAsesorados" href="#">Mis asesorados</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-capsules"></i><a class="liProductos" href="frmProductos.aspx">Productos</a></li>
                     <li class="nav-item barra-navegacion__li"><i class="fas fa-sign-out-alt"></i><a href="#">Cerrar sesión</a></li>
                 </ul>
 
@@ -86,10 +89,10 @@
 
                 <ul class="navbar-nav mr-auto barra-navegacion__ul">
                     <li class="nav-item barra-navegacion__li-usuario"><span class="badge badge-dark">Cliente</span></li>
-                    <li class="nav-item barra-navegacion__li"><i class="fas fa-home"></i><a href="frmInicio.aspx">Inicio</a></li>
-                    <li class="nav-item barra-navegacion__li"><i class="far fa-user"></i><a href="#">Mi Perfil</a></li>
-                    <li class="nav-item barra-navegacion__li"><i class="fas fa-dumbbell"></i><a href="#">Mi rutina</a></li>
-                    <li class="nav-item barra-navegacion__li"><i class="fas fa-capsules"></i><a href="frmProductos.aspx">Productos</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-home"></i><a class="liInicio" href="frmInicio.aspx">Inicio</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="far fa-user"></i><a class="liPerfil" href="frmPerfilCliente.aspx">Mi Perfil</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-dumbbell"></i><a class="liRutina" href="frmRutinaCliente.aspx">Mi rutina</a></li>
+                    <li class="nav-item barra-navegacion__li"><i class="fas fa-capsules"></i><a class="liProductos" href="frmProductos.aspx">Productos</a></li>
                     <li class="nav-item barra-navegacion__li"><i class="fas fa-sign-out-alt"></i><a href="#">Cerrar sesión</a></li>
                 </ul>
 
@@ -108,20 +111,15 @@
         </form>
     </main>
     
-    <aside>
-
-    </aside>
-   
-        <div class="footer-dark">
+    <div class="footer-dark">
         <footer>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 col-md-3 item">
                         <h3>Servicios</h3>
                         <ul>
-                            <li><a href="#">Productos</a></li>
-                            <li><a href="#">Rutinas</a></li>
-                            <li><a href="#">Diseño web</a></li>
+                            <li><a href="frmProductos.aspx">Productos</a></li>
+                            <li><a href="frmAyuda.aspx">Misión</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-6 col-md-3 item">
@@ -136,7 +134,12 @@
                         <h3>The Central GYM</h3>
                         <p>Yuriria, Guanajuato, México.</p>
                     </div>
-                    <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                    <div class="col item social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
                 <p class="copyright">The Central GYM © 2021</p>
             </div>
@@ -144,11 +147,12 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="JS/bootstrapValidator.js"></script>
     <link href="CSS/footer_style.css" rel="stylesheet" />
+    
     <asp:ContentPlaceHolder ID="Scripts" runat="server">
     </asp:ContentPlaceHolder>
+
 </body>
 </html>
